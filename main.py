@@ -27,6 +27,9 @@ for client in range(clients):
             else:
                 print("This color is unavailable! try again.\n")
 
+    if scoops > 20:
+        discount += 5
+
     print(f"\nNumber of scoops: {scoops}\nPrice before discount: {price}\nPrice after discount: {price - discount}\n"
           f"Scoops colors list:")
     for color in scoops_list:
